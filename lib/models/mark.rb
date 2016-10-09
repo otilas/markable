@@ -3,7 +3,8 @@ module Markable
     belongs_to :markable, :polymorphic => true
     belongs_to :marker, :polymorphic => true
 
-    if defined?(ActiveModel::MassAssignmentSecurity)
+    # if defined?(ActiveModel::MassAssignmentSecurity)
+    if Rails.version.to_i < 4
       attr_accessible :markable_id, :markable_type, :marker_id, :marker_type, :mark
     end
 

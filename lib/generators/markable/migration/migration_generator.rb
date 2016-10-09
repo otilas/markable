@@ -31,7 +31,7 @@ module Markable
 
     def create_migration_file
       if self.class.orm_has_migration?
-        migration_template 'migration.rb', 'db/migrate/markable_migration'
+        migration_template 'migration.rb', 'db/migrate/markable_migration.rb'
       end
     end
   end

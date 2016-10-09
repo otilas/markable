@@ -23,8 +23,13 @@ Nope, **markable** can handle it too!
 Add to your Gemfile
 
 ```
-gem 'markable'
+gem 'markable', github: 'qx/markable'
+
 ```
+### merge bug fix
+> Properly generate migration file, let Rails 4 apps use the gem
+> add .rb extension to migration filename
+
 
 Run
 
